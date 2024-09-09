@@ -60,6 +60,10 @@ Build/*/**
 # Don't ignore icon files in Build
 !Build/**/*.ico
 
+# Allow any files from /RawContent dir.
+# Any file in /RawContent dir will be managed by git lfs.
+!/RawContent/**/*
+
 # Built data for maps
 *_BuiltData.uasset
 
@@ -69,6 +73,9 @@ Saved/*
 # Compiled source files for the engine to use
 Intermediate/*
 Plugins/*/Intermediate/*
+
+# RiderLink Plugin
+Plugins/*/RiderLink/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
